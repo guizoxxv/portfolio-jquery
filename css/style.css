@@ -1,0 +1,215 @@
+/* VARIABLES */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.description {
+  text-align: justify;
+}
+.description a {
+  font-weight: bold;
+  transition: 0.3s;
+}
+.description a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.title {
+  font-family: 'Exo', sans-serif;
+  padding: 20px 0;
+}
+.title > * {
+  margin: 5px 0;
+}
+.title img {
+  width: 100px;
+}
+.title h1, .title h4 {
+  text-align: center;
+  font-weight: normal;
+  margin: auto;
+}
+.title h1 {
+  font-size: 70px;
+  letter-spacing: 10px;
+}
+
+.social {
+  font-size: 25px;
+}
+.social > * {
+  margin: 0 5px;
+}
+.social i {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px;
+  transition: 0.3s;
+}
+.social i:hover {
+  transition: 0.3s;
+  background: #16A085;
+}
+
+.cards {
+  margin: 40px auto;
+  max-width: 1200px;
+}
+.cards .card {
+  width: calc(100% - 20px);
+  margin: 20px;
+  position: relative;
+}
+.cards .card img {
+  border: 5px solid gray;
+}
+.cards .card .card-hover {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.cards .card .card-hover:hover {
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.65);
+  opacity: 1;
+}
+.cards .card .card-hover h4 {
+  font-size: 25px;
+}
+.cards .card .card-hover .date {
+  color: #16A085;
+  margin-bottom: 20px;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  max-width: 800px;
+  max-height: 90%;
+  overflow-y: auto;
+  background: white;
+  color: black;
+  padding: 30px 20px 20px 20px !important;
+  text-align: center;
+}
+.modal > *:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+.modal img {
+  border: 5px solid gray;
+}
+.modal h3 {
+  font-size: 18px;
+}
+.modal h3 span {
+  font-weight: normal;
+}
+.modal h4 {
+  font-size: 18px;
+  text-decoration: underline;
+}
+.modal .tags li {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 5px 5px !important;
+}
+.modal .tags li a {
+  height: 100%;
+  width: 100%;
+  padding: 5px !important;
+  display: inline-block;
+  transition: 0.3s;
+}
+.modal .tags li a:hover {
+  background: lightgray;
+  transition: 0.3s;
+}
+.modal .links {
+  margin-top: 20px !important;
+}
+.modal .links a {
+  color: #16A085;
+  font-weight: bold;
+  font-size: 20px;
+}
+.modal .links a:hover {
+  text-decoration: underline;
+}
+.modal .links a:not(:last-child) {
+  margin-right: 20px !important;
+}
+.modal .close-top {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.modal .close {
+  color: gray;
+}
+.modal .close:hover {
+  cursor: pointer;
+  color: tomato;
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    margin: 10px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: calc(50% - 40px) !important;
+    margin: 20px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: calc(33.333333% - 40px) !important;
+  }
+}
