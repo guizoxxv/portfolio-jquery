@@ -80,7 +80,7 @@ body {
   margin: 0 5px;
 }
 .social i {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 100%;
   padding: 10px;
   transition: 0.3s;
@@ -130,7 +130,7 @@ body {
 .modal {
   display: none;
   position: relative;
-  max-width: 800px;
+  max-width: 1024px;
   max-height: 90%;
   overflow-y: auto;
   background: white;
