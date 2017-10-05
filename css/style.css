@@ -11,7 +11,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white; }
+  color: white;
+  font-size: 16px; }
 
 header {
   margin: 50px;
@@ -61,7 +62,7 @@ a {
   grid-gap: 30px; }
   .portfolio img {
     display: block;
-    max-width: 100%; }
+    width: 100%; }
 
 .card {
   position: relative;
@@ -86,15 +87,15 @@ a {
     background: rgba(0, 0, 0, 0.7);
     cursor: pointer;
     opacity: 1; }
-  .card-hover > div {
-    width: 100%; }
   .card-hover h3 {
     font-size: 25px;
     margin: 0 0 5px 0; }
+  .card-hover .card-hover-content {
+    width: 100%; }
   .card-hover .date {
     margin: 0 0 10px 0;
     color: #16A085; }
-  .card-hover .description {
+  .card-hover .brief {
     margin: 0; }
 
 /* === modal === */
@@ -114,6 +115,10 @@ a {
     font-size: 18px; }
     .modal h4 span {
       font-weight: normal; }
+  .modal a {
+    text-decoration: underline; }
+    .modal a:hover {
+      color: #16A085; }
   .modal img {
     border: 5px solid gray; }
   .modal ul {
@@ -126,19 +131,17 @@ a {
   margin: 5px; }
   .tags li a {
     display: inline-block;
-    padding: 5px; }
+    padding: 5px;
+    text-decoration: none; }
     .tags li a:hover {
+      color: inherit;
       background: lightgray; }
 
 .links {
-  margin-top: 20px; }
-  .links a {
-    color: #16A085;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0 20px; }
-    .links a:hover {
-      text-decoration: underline; }
+  margin-top: 20px;
+  font-size: 20px; }
+  .links li {
+    margin: 5px; }
 
 .close {
   position: fixed;
@@ -188,7 +191,10 @@ a {
 
   .portfolio {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px; } }
+    grid-gap: 15px; }
+
+  .modal {
+    padding: 10px; } }
 @media (max-width: 425px) {
   header {
     margin: 20px 10px; }
@@ -207,6 +213,11 @@ a {
 
   .portfolio {
     grid-template-columns: 1fr;
-    grid-gap: 10px; } }
+    grid-gap: 10px; }
+
+  .card-hover h3 {
+    font-size: 20px; }
+  .card-hover p {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */
