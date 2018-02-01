@@ -46,7 +46,6 @@ a {
 .social {
   margin: 50px; }
   .social i {
-    border: 2px solid white;
     border-radius: 100%;
     margin: 0 5px;
     padding: 10px;
@@ -125,6 +124,9 @@ a {
     padding-left: 0; }
     .modal ul li {
       display: inline-block; }
+
+.descricao {
+  text-align: left; }
 
 .tags li {
   border: 1px solid black;
@@ -219,5 +221,3 @@ a {
     font-size: 20px; }
   .card-hover p {
     font-size: 13px; } }
-
-/*# sourceMappingURL=style.css.map */
